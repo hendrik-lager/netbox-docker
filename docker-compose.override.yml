@@ -3,3 +3,5 @@ services:
   netbox:
     ports:
     - 8085:8080
+    volumes:
+    - /home/docker/netbox-docker/configuration:/etc/netbox/config:z,ro
